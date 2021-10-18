@@ -1,0 +1,42 @@
+.header {
+  padding: 3rem 1rem;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #f1f1f1;
+  }
+
+  &__logo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .specs-logo {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, minmax(2rem, 4rem));
+
+    justify-content: center;
+
+    svg {
+      max-width: 100%;
+
+      &:nth-child(1) path {
+        fill: orangered;
+      }
+      &:nth-child(2) path {
+        fill: blue;
+      }
+      &:nth-child(3) path {
+        fill: yellow;
+      }
+      &:nth-child(4) path {
+        fill: skyblue;
+      }
+    }
+  }
+}

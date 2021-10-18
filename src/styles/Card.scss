@@ -1,0 +1,60 @@
+.card-group {
+  .card {
+    box-shadow: 1px 1px 2px rgba($color: #000, $alpha: 0.5);
+
+    background-color: #f1f1f1;
+
+    transition: all 0.3s cubic-bezier(0.94, 0.58, 0.43, 0.86);
+
+    &__photo {
+      width: 100%;
+      height: 233px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s cubic-bezier(0.94, 0.58, 0.43, 0.86);
+      }
+    }
+
+    &__heading {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 0 10px;
+      strong {
+        margin-right: 0.75rem;
+      }
+    }
+
+    &__content {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 0 10px;
+    }
+
+    &:hover {
+      .card__photo img {
+        border-radius: 100%;
+        padding: 0.75rem;
+      }
+
+      transform: rotateZ(5deg);
+    }
+
+    &__link {
+      width: max-content;
+      padding: 1rem 1.5rem;
+      background-color: rgba($color: #000, $alpha: 0.9);
+      margin-left: auto;
+      a {
+        text-decoration: none;
+        color: #f1f1f1;
+      }
+    }
+  }
+}
